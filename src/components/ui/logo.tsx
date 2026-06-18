@@ -13,7 +13,7 @@ export const Logo: React.FC<LogoProps> = ({
   variant = "main",
   size = 200,
 }) => {
-  const logoSrc = "/images/logo/logo_main.png";
+  const logoSrc = "/images/logo/WhatsApp Image 2026-06-07 at 3.10.27 PM (1).png";
   
   // Parse numeric width size
   const widthVal = typeof size === "string" ? parseInt(size, 10) || 200 : size;
