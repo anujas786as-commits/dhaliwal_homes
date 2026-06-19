@@ -4,6 +4,7 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { GsapEffects } from "@/components/ui/gsap-effects";
 import { getSettings } from "@/lib/db-helper";
 import { MaintenanceProvider } from "@/components/ui/maintenance-provider";
+import { SmoothScrollProvider } from "@/components/ui/smooth-scroll-provider";
 import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     default: "Dhaliwal Homes | Premium Custom & Luxury Home Builders Melbourne",
     template: "%s | Dhaliwal Homes",
   },
-  description: "Dhaliwal Homes is a premier Melbourne builder specializing in luxury custom homes, multi-generational extensions, high-end renovations, and commercial construction. Serving South East Melbourne, Pakenham, Berwick, Officer, and Cranbourne.",
+  description: "Dhaliwal Homes is a premier Melbourne builder specializing in luxury custom homes, multi-generational extensions, high-end renovations, and commercial construction. Serving Melbourne, Pakenham, Berwick, Officer, and Cranbourne.",
   keywords: [
     "Custom Home Builder Melbourne",
     "Luxury Home Builder Melbourne",
@@ -106,7 +107,7 @@ export default async function RootLayout({
     "url": "https://dhaliwalhomes.com.au",
     "logo": "https://dhaliwalhomes.com.au/images/logo/fav.png",
     "image": "https://dhaliwalhomes.com.au/images/beautiful-house-exterior-at-twilight-in-suburban-s-2026-03-18-08-25-48-utc.jpg.jpeg",
-    "description": "Bespoke Melbourne residential builder specializing in luxury custom homes, multi-generational extensions, modern renovations, and knockdown-rebuilds in Pakenham and South East suburbs.",
+    "description": "Bespoke Melbourne residential builder specializing in luxury custom homes, multi-generational extensions, modern renovations, and knockdown-rebuilds in Pakenham and Melbourne suburbs.",
     "telephone": "+61433 704 645",
     "email": "devinder@hotmail.com.au",
     "address": {
@@ -122,20 +123,6 @@ export default async function RootLayout({
       "latitude": -37.8427,
       "longitude": 144.9749
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday"],
-        "opens": "09:00",
-        "closes": "14:00"
-      }
-    ],
     "areaServed": [
       "Melbourne",
       "Pakenham",
@@ -143,7 +130,7 @@ export default async function RootLayout({
       "Officer",
       "Cranbourne",
       "Narre Warren",
-      "South East Melbourne"
+      "Melbourne"
     ],
     "priceRange": "$$$$"
   };
@@ -151,7 +138,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sans.variable} ${outfit.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${sans.variable} ${outfit.variable} ${cormorant.variable} antialiased`}
     >
       <head>
         <script
@@ -159,12 +146,14 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full bg-background text-foreground flex flex-col">
+      <body className="min-h-screen bg-background text-foreground flex flex-col">
         <ScrollReveal />
         <GsapEffects />
-        <MaintenanceProvider initialMaintenanceMode={!!settings.maintenanceMode}>
-          {children}
-        </MaintenanceProvider>
+        <SmoothScrollProvider>
+          <MaintenanceProvider initialMaintenanceMode={!!settings.maintenanceMode}>
+            {children}
+          </MaintenanceProvider>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

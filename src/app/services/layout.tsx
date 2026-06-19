@@ -6,14 +6,14 @@ export const metadata: Metadata = {
     template: "%s | Dhaliwal Homes",
   },
   description:
-    "Explore Dhaliwal Homes' full range of building services: custom homes, luxury homes, home renovations, second-storey extensions, knockdown rebuilds, and commercial construction across Melbourne's South East.",
+    "Explore Dhaliwal Homes' full range of building services: custom homes, luxury homes, home renovations, second-storey extensions, knockdown rebuilds, and commercial construction across Melbourne.",
   alternates: {
     canonical: "https://dhaliwalhomes.com.au/services",
   },
   openGraph: {
     title: "Building Services | Dhaliwal Homes Melbourne",
     description:
-      "From custom home builds to knockdown rebuilds and commercial fitouts — Dhaliwal Homes is your registered domestic builder in Pakenham, Berwick, Cranbourne & South East Melbourne.",
+      "From custom home builds to knockdown rebuilds and commercial fitouts — Dhaliwal Homes is your registered domestic builder in Pakenham, Berwick, Cranbourne & Melbourne.",
     url: "https://dhaliwalhomes.com.au/services",
     images: [
       {

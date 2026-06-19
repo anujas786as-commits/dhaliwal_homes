@@ -19,6 +19,7 @@ interface ServiceContent {
   processSteps: { step: string; title: string; desc: string }[];
   benefits: string[];
   faqs: { q: string; a: string }[];
+  gallery: string[];
 }
 
 const serviceData: Record<string, ServiceContent> = {
@@ -59,6 +60,11 @@ const serviceData: Record<string, ServiceContent> = {
       { q: "Can I make changes to the plans during construction?", a: "Yes. Minor framing variations can be handled via formal variation orders. We coordinate closely to discuss feasibility and quote costs before performing the work." },
       { q: "Do you supply interior layout advisors?", a: "Yes. We work alongside professional interior consultants to guide you through kitchen joinery layouts, tile specifications, paint palettes, and electrical fixtures." },
     ],
+    gallery: [
+      "/images/beautiful-blue-house-on-a-sunny-day-in-vancouver-2026-03-26-09-48-53-utc.jpg.jpeg",
+      "/images/perfect-usa-home-2026-03-17-04-21-11-utc.jpg.jpeg",
+      "/images/beautiful-house-exterior-at-twilight-in-suburban-s-2026-03-18-08-25-48-utc.jpg.jpeg"
+    ]
   },
   "luxury-homes": {
     title: "Luxury Homes",
@@ -97,6 +103,11 @@ const serviceData: Record<string, ServiceContent> = {
       { q: "Do you coordinate custom pools and landscape design?", a: "Yes. We manage integrated pool excavation and landscape plans under a single construction schedule, avoiding trade overlap conflicts." },
       { q: "What is your project limit for luxury builds?", a: "We limit the number of active high-end builds to maintain direct builder supervision by Devinder on every site." },
     ],
+    gallery: [
+      "/images/a-suburban-luxury-home-in-a-north-american-city-2026-01-11-09-38-23-utc.jpg.jpeg",
+      "/images/attractive-suburban-home-with-black-iron-gate-2026-03-26-11-36-08-utc.jpg.jpeg",
+      "/images/perfect-usa-home-2026-03-17-04-21-11-utc.jpg.jpeg"
+    ]
   },
   renovations: {
     title: "Home Renovations",
@@ -135,6 +146,11 @@ const serviceData: Record<string, ServiceContent> = {
       { q: "Can we remain in the home during the renovation?", a: "This depends on the scope. For kitchen or single bathroom upgrades, you can usually remain on-site in the unaffected areas. For whole-house structural renovations, vacating the premises during active construction stages is recommended for safety and to allow faster trade access." },
       { q: "Are municipal permits needed for renovations?", a: "If we remove structural walls or alter external windows/rooflines, a building permit is legally required in Victoria. We manage this entire submission." },
     ],
+    gallery: [
+      "/images/troy-mortier-UK3vs6Z7PaE-unsplash.jpg",
+      "/images/k8-OdlW97ETRs0-unsplash.jpg",
+      "/images/Industrial Design Cafe Interiors.jpg"
+    ]
   },
   extensions: {
     title: "Home Extensions",
@@ -173,6 +189,11 @@ const serviceData: Record<string, ServiceContent> = {
       { q: "How is a second storey extension constructed safely?", a: "We install temporary weather protection sheets, reinforce ground floor studs, install structural floor joists, and raise the new framing walls before opening the lower ceiling." },
       { q: "Will the new section match the older portion of the home?", a: "Yes. We source matching bricks, mortar pigments, timber siding profiles, and roofing tiles to ensure a cohesive look." },
     ],
+    gallery: [
+      "/images/victorian-style-homes-in-san-francisco-2026-03-09-08-13-52-utc.jpg.jpeg",
+      "/images/san-francisco-skyline-with-famous-painted-ladies-h-2026-03-19-02-14-56-utc.jpg.jpeg",
+      "/images/a-suburban-luxury-home-in-a-north-american-city-2026-03-26-09-21-00-utc.jpg.jpeg"
+    ]
   },
   "knockdown-rebuild": {
     title: "Knockdown Rebuilds",
@@ -211,6 +232,11 @@ const serviceData: Record<string, ServiceContent> = {
       { q: "Who manages the demolition phase?", a: "We coordinate with licensed demolition sub-contractors to manage utility disconnections, asbestos checks, site clearance, and waste recycling." },
       { q: "Are there council overlays that could block a rebuild?", a: "Yes. Heritage, vegetation, and single-dwelling overlays can impact your plans. We review all title details during our feasibility audit." },
     ],
+    gallery: [
+      "/images/family-embracing-outside-of-modern-home-on-sunny-d-2026-03-25-02-45-12-utc.jpg.jpeg",
+      "/images/nicolas-gonzalez-syol6R3rJQU-unsplash.jpg",
+      "/images/modern-luxury-house-with-landscaped-garden-under-a-2026-03-09-02-55-27-utc.jpg.jpeg"
+    ]
   },
   "commercial-construction": {
     title: "Commercial Construction",
@@ -249,6 +275,11 @@ const serviceData: Record<string, ServiceContent> = {
       { q: "Do you coordinate fire safety compliance?", a: "Yes. All commercial designs are integrated with fire exit doors, thermal detectors, emergency lighting, and fire extinguisher placements." },
       { q: "Can we execute construction outside business hours?", a: "For office/retail fit-outs within shared complexes, we can coordinate quiet trade phases and evening work to minimize disruptions." },
     ],
+    gallery: [
+      "/images/brett-jordan-KIhrwteNAWg-unsplash.jpg",
+      "/images/cole-johnson-cOhe8v9PXmI-unsplash.jpg",
+      "/images/central-melbourne-city-riverside-skyline-in-austra-2026-03-25-08-25-38-utc.jpg.jpeg"
+    ]
   },
 };
 
@@ -309,68 +340,114 @@ export default async function ServicePage({ params }: PageProps) {
     <>
       <Header />
 
-      {/* Hero Banner */}
-      <section className="relative bg-charcoal pt-24 pb-12 border-b border-orange/10 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative bg-charcoal pt-28 pb-16 border-b border-orange/10 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src={service.heroImg}
             alt={service.title}
             fill
-            className="object-cover opacity-20 object-center gsap-hero-parallax"
+            className="object-cover opacity-45 object-center scale-105 animate-subtle-zoom"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/90 to-charcoal/45" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/30" />
         </div>
-        <div className="relative z-10 max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 text-center py-10 space-y-4">
-          <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase block gsap-hero-title">
+        <div className="relative z-10 max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 space-y-4">
+          <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase block">
             SPECIALIZED SERVICE
           </span>
-          <h1 className="text-4xl sm:text-6xl font-serif text-white tracking-tight gsap-hero-title">
+          <h1 className="text-4xl sm:text-6xl font-serif text-white tracking-tight">
             {service.title}
           </h1>
-          <div className="h-[1px] w-20 bg-gold mx-auto mt-2 gsap-hero-title" />
-          <p className="max-w-2xl mx-auto text-white/80 font-light text-base sm:text-lg gsap-hero-title">
+          <div className="h-[2px] w-20 bg-gold mx-auto mt-2" />
+          <p className="max-w-2xl mx-auto text-white/90 font-light text-base sm:text-lg">
             {service.subtitle}
           </p>
         </div>
       </section>
 
       {/* Main Info */}
-      <section className="bg-white py-14 text-foreground">
+      <section className="bg-white py-16 text-foreground">
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             
             {/* Left Main Content */}
-            <div className="lg:col-span-8 space-y-12 reveal-on-scroll">
-              <div className="space-y-4">
-                <h2 className="text-charcoal font-serif text-3xl">Services Overview</h2>
-                <div className="h-[1px] w-12 bg-gold" />
-                <p className="text-foreground/85 font-light leading-relaxed text-base sm:text-lg">
-                  {service.intro}
-                </p>
+            <div className="lg:col-span-8 space-y-12">
+              
+              {/* Services Overview & Big Image */}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                <div className="md:col-span-7 space-y-4">
+                  <h2 className="text-charcoal font-serif text-3xl">Services Overview</h2>
+                  <div className="h-[2px] w-12 bg-gold" />
+                  <p className="text-foreground/85 font-light leading-relaxed text-base sm:text-lg">
+                    {service.intro}
+                  </p>
+                </div>
+                {/* BIG IMAGE SHOWCASE */}
+                <div className="md:col-span-5 relative h-[300px] w-full overflow-hidden rounded-2xl border border-orange/10 shadow-lg group">
+                  <Image
+                    src={service.heroImg}
+                    alt={`${service.title} Large Visual`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <span className="text-white text-xs font-semibold uppercase tracking-wider">{service.title} Preview</span>
+                  </div>
+                </div>
               </div>
 
               {/* Subsections Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 gsap-stagger-grid">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
                 {service.subsections.map((sub, idx) => (
-                  <div key={idx} className="bg-beige border border-orange/15 p-6 rounded-sm space-y-3 gsap-stagger-item">
+                  <div 
+                    key={idx} 
+                    className="bg-gradient-to-br from-beige to-white border border-orange/10 p-6 rounded-2xl shadow-xs hover:shadow-md hover:border-gold/30 transition-all duration-300 space-y-3"
+                  >
                     <h4 className="text-gold text-sm font-semibold uppercase tracking-wider">{sub.title}</h4>
                     <p className="text-foreground/75 text-xs sm:text-sm font-light leading-relaxed">{sub.desc}</p>
                   </div>
                 ))}
               </div>
 
+              {/* PROJECT SHOWCASE GALLERY */}
+              <div className="space-y-6 pt-8">
+                <div className="space-y-3">
+                  <h3 className="text-charcoal font-serif text-2xl">Project Showcase Gallery</h3>
+                  <div className="h-[2px] w-12 bg-gold" />
+                  <p className="text-foreground/70 font-light text-sm">
+                    View real-world examples and render inspirations of our {service.title.toLowerCase()} craftsmanship.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  {service.gallery.map((imgUrl, idx) => (
+                    <div 
+                      key={idx} 
+                      className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-orange/10 shadow-md group hover:shadow-xl transition-all duration-300"
+                    >
+                      <Image
+                        src={imgUrl}
+                        alt={`${service.title} Gallery ${idx + 1}`}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-300" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               {/* Timeline/Process */}
               <div className="space-y-8 pt-8">
                 <div className="space-y-3">
                   <h3 className="text-charcoal font-serif text-2xl">{service.processTitle}</h3>
-                  <div className="h-[1px] w-12 bg-gold" />
+                  <div className="h-[2px] w-12 bg-gold" />
                 </div>
-                <div className="relative border-l border-orange/20 pl-8 ml-4 space-y-10">
+                <div className="relative border-l-2 border-orange/10 pl-8 ml-4 space-y-10">
                   {service.processSteps.map((step, idx) => (
-                    <div key={idx} className="relative group reveal-on-scroll">
+                    <div key={idx} className="relative group">
                       {/* Timeline dot */}
-                      <span className="absolute left-[-42px] top-1 flex items-center justify-center w-7 h-7 bg-gold border border-charcoal text-charcoal font-bold text-[10px] rounded-full">
+                      <span className="absolute left-[-42px] top-1 flex items-center justify-center w-7 h-7 bg-gold text-white font-bold text-[10px] rounded-full shadow-md group-hover:scale-110 transition-transform">
                         {step.step}
                       </span>
                       <h4 className="text-charcoal text-base font-semibold uppercase tracking-wider mb-2 group-hover:text-gold transition-colors">
@@ -384,12 +461,12 @@ export default async function ServicePage({ params }: PageProps) {
             </div>
 
             {/* Right Sidebar */}
-            <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-24 reveal-on-scroll delay-200">
+            <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-24">
               
               {/* Benefits Box */}
-              <div className="bg-beige border border-orange/15 p-8 rounded-sm space-y-6">
+              <div className="bg-gradient-to-br from-beige to-white border border-orange/10 p-8 rounded-2xl shadow-sm space-y-6">
                 <div className="flex items-center space-x-3 text-gold">
-                  <HardHat className="w-6 h-6" />
+                  <HardHat className="w-6 h-6 animate-pulse" />
                   <h4 className="text-charcoal text-sm font-semibold uppercase tracking-widest">Why Choose Us</h4>
                 </div>
                 <div className="h-[1px] w-full bg-gold/10" />
@@ -403,8 +480,8 @@ export default async function ServicePage({ params }: PageProps) {
                 </ul>
               </div>
 
-              {/* Documents Box */}
-              <div className="bg-white border border-orange/15 shadow-sm p-8 rounded-sm space-y-6">
+              {/* Resources Box */}
+              <div className="bg-white border border-orange/10 shadow-md p-8 rounded-2xl space-y-6">
                 <div className="flex items-center space-x-3 text-gold">
                   <FileText className="w-6 h-6" />
                   <h4 className="text-charcoal text-sm font-semibold uppercase tracking-widest">Resources</h4>
@@ -415,7 +492,7 @@ export default async function ServicePage({ params }: PageProps) {
                 </p>
                 <Link
                   href="/contact"
-                  className="w-full text-center block bg-transparent border border-gold hover:bg-gold hover:text-white text-gold font-semibold uppercase tracking-widest text-xs py-3 transition-colors duration-200 rounded-sm"
+                  className="w-full text-center block bg-transparent border border-gold hover:bg-gold hover:text-white text-gold font-semibold uppercase tracking-widest text-xs py-3.5 transition-all duration-300 rounded-xl"
                 >
                   Request Consultation Brief
                 </Link>
@@ -428,7 +505,7 @@ export default async function ServicePage({ params }: PageProps) {
       </section>
 
       {/* Specific FAQs */}
-      <section className="bg-beige py-14 text-foreground border-y border-orange/10">
+      <section className="bg-beige py-16 text-foreground border-y border-orange/10">
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase">
@@ -437,14 +514,14 @@ export default async function ServicePage({ params }: PageProps) {
             <h2 className="text-3xl font-serif text-charcoal tracking-tight">
               Service Specific FAQs
             </h2>
-            <div className="h-[1px] w-20 bg-gold mx-auto" />
+            <div className="h-[2px] w-20 bg-gold mx-auto" />
           </div>
 
-          <div className="space-y-6 gsap-stagger-grid">
+          <div className="space-y-6">
             {service.faqs.map((faq, idx) => (
               <div
                 key={idx}
-                className="bg-white border border-orange/15 shadow-sm p-6 sm:p-8 rounded-sm space-y-3 gsap-stagger-item"
+                className="bg-white border border-orange/10 shadow-sm hover:shadow-md hover:border-gold/30 p-6 sm:p-8 rounded-2xl transition-all duration-300 space-y-3"
               >
                 <div className="flex items-start space-x-3 text-gold">
                   <HelpCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -462,7 +539,7 @@ export default async function ServicePage({ params }: PageProps) {
       </section>
 
       {/* Related Projects - Design Inspiration Link */}
-      <section className="bg-white py-14 text-foreground text-center">
+      <section className="bg-white py-16 text-foreground text-center">
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase">VISUALIZE YOUR BUILD</span>
           <h2 className="text-3xl sm:text-5xl font-serif text-charcoal">Explore Material & Render Inspirations</h2>
@@ -472,7 +549,7 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="pt-4">
             <Link
               href="/portfolio"
-              className="inline-flex items-center bg-gold hover:bg-gold/90 text-white font-semibold uppercase tracking-widest text-xs px-8 py-4 transition-all duration-300 rounded-sm shadow-lg"
+              className="inline-flex items-center bg-gold hover:bg-gold/90 hover:scale-[1.02] active:scale-[0.98] text-white font-semibold uppercase tracking-widest text-xs px-8 py-4 transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl"
             >
               View Design Vision <ArrowRight className="w-4 h-4 ml-2" />
             </Link>

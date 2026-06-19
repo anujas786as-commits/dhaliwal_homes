@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Dhaliwal Homes | Free Consultation Melbourne",
     description:
-      "Ready to start your custom home build or renovation? Contact Devinder Dhaliwal at Dhaliwal Homes for a free feasibility consultation in South East Melbourne.",
+      "Ready to start your custom home build or renovation? Contact Devinder Dhaliwal at Dhaliwal Homes for a free feasibility consultation in Melbourne.",
     url: "https://dhaliwalhomes.com.au/contact",
     images: [
       {

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us – Melbourne's Custom Home Builder",
   description:
-    "Learn about Dhaliwal Homes and founder Devinder Dhaliwal – a registered domestic builder based in Pakenham specialising in bespoke custom homes, structural extensions, and renovations across Melbourne's South East.",
+    "Learn about Dhaliwal Homes and founder Devinder Dhaliwal – a registered domestic builder based in Pakenham specialising in bespoke custom homes, structural extensions, and renovations across Melbourne.",
   alternates: {
     canonical: "https://dhaliwalhomes.com.au/about",
   },

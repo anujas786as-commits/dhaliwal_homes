@@ -76,7 +76,7 @@ export default function About() {
                   In the residential construction sector, client communication and site supervision can often become secondary to volume targets. This can lead to structural shortcuts, scheduling delays, and poor oversight on-site.
                 </p>
                 <p>
-                  Devinder Dhaliwal established <strong>Dhaliwal Homes</strong> in January 2026 to offer an alternative to volume builds. Based in Pakenham, we focus on custom residential homes, second-storey extensions, and full-scale structural renovations across South East Melbourne.
+                  Devinder Dhaliwal established <strong>Dhaliwal Homes</strong> in January 2026 to offer an alternative to volume builds. Based in Pakenham, we focus on custom residential homes, second-storey extensions, and full-scale structural renovations across Melbourne.
                 </p>
                 <p>
                   "My focus is on managing a limited number of active builds at any one time. This allows me to personally supervise critical phases, including slab pours, timber framing layouts, waterproofing, and internal fix stages," says Devinder.
@@ -84,7 +84,7 @@ export default function About() {
               </div>
 
               {/* History note */}
-              <div className="bg-beige border border-orange/15 p-6 rounded-sm flex items-center space-x-4">
+              <div className="bg-gradient-to-br from-beige to-white border border-orange/10 p-6 rounded-2xl shadow-xs flex items-center space-x-4">
                 <Calendar className="w-10 h-10 text-gold flex-shrink-0" />
                 <div>
                   <h4 className="text-charcoal text-sm font-semibold uppercase tracking-wider">Established January 2026</h4>
@@ -97,7 +97,7 @@ export default function About() {
 
             {/* Visual Column */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="relative aspect-[4/5] w-full overflow-hidden border border-gold/25 rounded-sm shadow-xl">
+              <div className="relative aspect-[4/5] w-full overflow-hidden border border-gold/20 rounded-2xl shadow-xl">
                 <Image
                   src="/images/logo/WhatsApp Image 2026-06-09 at 10.54.35 AM.jpeg"
                   alt="Founder Devinder Dhaliwal representation"
@@ -105,9 +105,9 @@ export default function About() {
                   className="object-cover"
                 />
               </div>
-              <div className="text-center bg-beige border border-orange/15 p-5 rounded-sm">
+              <div className="text-center bg-gradient-to-br from-beige to-white border border-orange/10 p-5 rounded-2xl">
                 <p className="text-gold text-xs font-bold uppercase tracking-widest">Devinder Dhaliwal</p>
-                <p className="text-foreground/70 text-[11px] font-light">Managing Director & Licensed Domestic Builder</p>
+                <p className="text-foreground/70 text-[11px] font-light">Managing Director & Builder | Dhaliwal Homes</p>
               </div>
             </div>
           </div>
@@ -119,8 +119,8 @@ export default function About() {
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Mission Card */}
-            <div className="bg-white border border-orange/15 p-8 md:p-10 rounded-sm shadow-sm relative group hover:border-orange/30 transition-all duration-300">
-              <div className="absolute top-6 right-6 bg-gold/10 border border-orange/20 p-3 rounded-sm text-gold">
+            <div className="bg-white border border-orange/10 p-8 md:p-10 rounded-2xl shadow-md relative group hover:border-gold/30 hover:shadow-xl transition-all duration-300">
+              <div className="absolute top-6 right-6 bg-gold/10 border border-orange/20 p-3 rounded-xl text-gold">
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="text-charcoal font-serif text-2xl mb-4 pr-12">Our Mission</h3>
@@ -130,13 +130,13 @@ export default function About() {
             </div>
 
             {/* Vision Card */}
-            <div className="bg-white border border-orange/15 p-8 md:p-10 rounded-sm shadow-sm relative group hover:border-orange/30 transition-all duration-300">
-              <div className="absolute top-6 right-6 bg-gold/10 border border-orange/20 p-3 rounded-sm text-gold">
+            <div className="bg-white border border-orange/10 p-8 md:p-10 rounded-2xl shadow-md relative group hover:border-gold/30 hover:shadow-xl transition-all duration-300">
+              <div className="absolute top-6 right-6 bg-gold/10 border border-orange/20 p-3 rounded-xl text-gold">
                 <Eye className="w-6 h-6" />
               </div>
               <h3 className="text-charcoal font-serif text-2xl mb-4 pr-12">Our Vision</h3>
               <p className="text-foreground/75 text-sm font-light leading-relaxed">
-                To serve South East Melbourne as a reliable, licensed residential builder, known for quality workmanship and straightforward communication.
+                To serve Melbourne as a reliable, licensed residential builder, known for quality workmanship and straightforward communication.
               </p>
             </div>
           </div>
@@ -162,9 +162,9 @@ export default function About() {
               return (
                 <div
                   key={idx}
-                  className="bg-beige border border-orange/15 p-8 hover:border-orange/30 transition-all duration-300 rounded-sm flex flex-col justify-start items-start gsap-stagger-item"
+                  className="bg-gradient-to-br from-beige to-white border border-orange/10 p-8 hover:border-gold/30 hover:shadow-lg transition-all duration-300 rounded-2xl shadow-sm flex flex-col justify-start items-start gsap-stagger-item"
                 >
-                  <div className="bg-white p-3 rounded-sm mb-6 border border-orange/15 text-gold">
+                  <div className="bg-white p-3 rounded-xl mb-6 border border-orange/10 text-gold">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-charcoal font-serif text-xl mb-4">{val.title}</h3>
@@ -212,7 +212,7 @@ export default function About() {
             </div>
 
             {/* Safety Commitments */}
-            <div className="lg:col-span-6 bg-white border border-orange/15 shadow-sm p-8 md:p-10 rounded-sm space-y-6 reveal-on-scroll delay-200">
+            <div className="lg:col-span-6 bg-white border border-orange/10 shadow-md p-8 md:p-10 rounded-2xl space-y-6 hover:shadow-lg transition-shadow duration-300 reveal-on-scroll delay-200">
               <div className="flex items-center space-x-3 text-gold">
                 <HardHat className="w-8 h-8" />
                 <span className="text-xs font-bold tracking-[0.25em] uppercase">
@@ -226,7 +226,7 @@ export default function About() {
                 Every construction zone managed by Dhaliwal Homes operates under custom Site-Specific Safety Management Plans. We enforce regular toolbox meetings, certified scaffolding setups, and secure fencing limits.
               </p>
               
-              <div className="bg-beige border border-orange/15 p-5 rounded flex items-start space-x-3">
+              <div className="bg-beige border border-orange/10 p-5 rounded-xl flex items-start space-x-3">
                 <ShieldAlert className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-charcoal text-xs font-semibold uppercase tracking-wider">Zero-Harm Site Protocol</h4>

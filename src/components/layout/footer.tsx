@@ -111,7 +111,7 @@ export const Footer: React.FC = () => {
         {/* Targeted Suburbs Covered */}
         <div className="border-t border-orange/10 mt-12 pt-8 text-center">
           <p className="text-xs text-foreground/60 font-light tracking-wide">
-            <strong>Service Areas:</strong> South East Melbourne &bull; Pakenham &bull; Berwick &bull; Officer &bull; Cranbourne &bull; Narre Warren &bull; Melbourne Metro
+            <strong>Service Areas:</strong> Melbourne &bull; Pakenham &bull; Berwick &bull; Officer &bull; Cranbourne &bull; Narre Warren &bull; Melbourne Metro
           </p>
         </div>
 

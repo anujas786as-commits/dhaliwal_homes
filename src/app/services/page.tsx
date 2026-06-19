@@ -68,8 +68,8 @@ export default function Services() {
       a: "All our builds are completed to Australian structural standards. We supply formal handover documentation, compliance certificates, and defect liability periods as required under Victorian building legislation. Speak to us directly for details applicable to your project.",
     },
     {
-      q: "Do you build outside of South East Melbourne?",
-      a: "We are based in Pakenham and focus primarily on Pakenham, Berwick, Officer, Cranbourne, Narre Warren, and the wider South East. However, we can take on premium architectural projects in outer areas on a case-by-case basis.",
+      q: "Do you build outside of Melbourne?",
+      a: "We are based in Pakenham and focus primarily on Pakenham, Berwick, Officer, Cranbourne, Narre Warren, and the wider Melbourne. However, we can take on premium architectural projects in outer areas on a case-by-case basis.",
     },
   ];
 
@@ -98,7 +98,7 @@ export default function Services() {
           </h1>
           <div className="h-[1px] w-20 bg-gold mx-auto mt-4 gsap-hero-title" />
           <p className="max-w-2xl mx-auto text-white/80 font-light text-base sm:text-lg gsap-hero-title">
-            Registered Domestic Builder managing custom homes, structural extensions, and light commercial construction across Melbourne's South East.
+            Registered Domestic Builder managing custom homes, structural extensions, and light commercial construction across Melbourne.
           </p>
         </div>
       </section>

@@ -60,12 +60,12 @@ export default function Contact() {
     setStatus({ loading: true, success: null, message: "" });
 
     // Client-side validation
-    const { name, phone, email, service, budget, message } = formData;
-    if (!name || !phone || !email || !service || !budget || !message) {
+    const { name, email } = formData;
+    if (!name || !email) {
       setStatus({
         loading: false,
         success: false,
-        message: "Please fill out all form inputs.",
+        message: "Name and Email are required fields.",
       });
       return;
     }
@@ -181,22 +181,21 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="e.g. John Citizen"
-                      className="w-full bg-beige border border-orange/15 text-charcoal px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
+                      className="w-full bg-beige border border-orange/10 text-charcoal px-4 py-3 rounded-xl focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-xs font-semibold uppercase tracking-wider text-foreground/85">
-                      Phone Number *
+                      Phone Number
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
-                      required
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="e.g. 0400 000 000"
-                      className="w-full bg-beige border border-orange/15 text-charcoal px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
+                      className="w-full bg-beige border border-orange/10 text-charcoal px-4 py-3 rounded-xl focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
                     />
                   </div>
                 </div>
@@ -214,7 +213,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="e.g. client@domain.com.au"
-                    className="w-full bg-beige border border-orange/15 text-charcoal px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
+                    className="w-full bg-beige border border-orange/10 text-charcoal px-4 py-3 rounded-xl focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
                   />
                 </div>
 
@@ -222,17 +221,16 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="service" className="text-xs font-semibold uppercase tracking-wider text-foreground/85">
-                      Service Required *
+                      Service Required
                     </label>
                     <select
                       id="service"
                       name="service"
-                      required
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-beige border border-orange/15 text-charcoal px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
+                      className="w-full bg-beige border border-orange/10 text-charcoal px-4 py-3 rounded-xl focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
                     >
-                      <option value="">-- Select Service --</option>
+                      <option value="">-- Select Service (Optional) --</option>
                       {services.map((svc) => (
                         <option key={svc} value={svc}>
                           {svc}
@@ -242,17 +240,16 @@ export default function Contact() {
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="budget" className="text-xs font-semibold uppercase tracking-wider text-foreground/85">
-                      Estimated Project Budget *
+                      Estimated Project Budget
                     </label>
                     <select
                       id="budget"
                       name="budget"
-                      required
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full bg-beige border border-orange/15 text-charcoal px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
+                      className="w-full bg-beige border border-orange/10 text-charcoal px-4 py-3 rounded-xl focus:outline-none focus:border-gold transition-colors text-sm font-light shadow-xs"
                     >
-                      <option value="">-- Select Budget --</option>
+                      <option value="">-- Select Budget (Optional) --</option>
                       {budgets.map((bdg) => (
                         <option key={bdg} value={bdg}>
                           {bdg}
@@ -265,17 +262,16 @@ export default function Contact() {
                 {/* Message / Brief */}
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-xs font-semibold uppercase tracking-wider text-foreground/85">
-                    Project Brief / Details *
+                    Project Brief / Details
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    required
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Provide details about your property block, dimensions, zoning parameters, number of bedrooms, and framing ideas..."
-                    className="w-full bg-beige border border-orange/15 text-charcoal px-4 py-3 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm font-light leading-relaxed resize-y shadow-xs"
+                    placeholder="Provide details about your property block, dimensions, zoning parameters, number of bedrooms, and framing ideas (Optional)..."
+                    className="w-full bg-beige border border-orange/10 text-charcoal px-4 py-3 rounded-xl focus:outline-none focus:border-gold transition-colors text-sm font-light leading-relaxed resize-y shadow-xs"
                   />
                 </div>
 
@@ -283,7 +279,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status.loading}
-                  className="w-full flex items-center justify-center bg-gold hover:bg-gold/90 text-white font-bold uppercase tracking-widest text-xs py-4 transition-all duration-300 rounded-sm shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex items-center justify-center bg-gold hover:bg-gold/90 hover:scale-[1.01] active:scale-[0.99] text-white font-bold uppercase tracking-widest text-xs py-4 transition-all duration-300 rounded-xl shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status.loading ? (
                     <span>Submitting Consultation request...</span>
@@ -300,7 +296,7 @@ export default function Contact() {
             <div className="lg:col-span-5 space-y-8 reveal-on-scroll delay-200">
 
               {/* Direct Details Card */}
-              <div className="bg-beige border border-orange/15 p-8 rounded-sm space-y-6">
+              <div className="bg-gradient-to-br from-beige to-white border border-orange/10 p-8 rounded-2xl shadow-sm space-y-6">
                 <h3 className="text-charcoal font-serif text-xl border-l-2 border-gold pl-3 uppercase tracking-wider">
                   Contact Information
                 </h3>
@@ -336,39 +332,18 @@ export default function Contact() {
                 </ul>
               </div>
 
-              {/* Business Hours Card */}
-              <div className="bg-beige border border-orange/15 p-8 rounded-sm space-y-6">
-                <h3 className="text-charcoal font-serif text-xl border-l-2 border-gold pl-3 uppercase tracking-wider">
-                  Operational Hours
-                </h3>
-
-                <ul className="space-y-3 text-sm text-foreground/75 font-light">
-                  <li className="flex justify-between border-b border-orange/10 pb-2">
-                    <span>Monday - Friday</span>
-                    <span className="text-charcoal font-medium">8:00 AM - 5:00 PM</span>
-                  </li>
-                  <li className="flex justify-between border-b border-orange/10 pb-2">
-                    <span>Saturday</span>
-                    <span className="text-charcoal font-medium">9:00 AM - 2:00 PM <span className="text-gold text-[10px] uppercase font-bold">(By Appt)</span></span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Sunday</span>
-                    <span className="text-red-600 font-medium">Closed</span>
-                  </li>
-                </ul>
-              </div>
 
               {/* Map & Direction Widget */}
-              <div className="bg-white border border-orange/15 shadow-sm p-8 rounded-sm space-y-6">
+              <div className="bg-white border border-orange/10 shadow-md p-8 rounded-2xl space-y-6">
                 <div className="flex items-center space-x-3 text-gold">
                   <Clock className="w-5 h-5" />
                   <h4 className="text-charcoal text-sm font-semibold uppercase tracking-widest">Office Feasibility Map</h4>
                 </div>
                 <div className="h-[1px] w-full bg-gold/10" />
                 <p className="text-foreground/70 text-xs font-light leading-relaxed">
-                  Headquartered in Melbourne VIC. Licensed residential builder managing sites throughout Melbourne's South East corridors.
+                  Headquartered in Melbourne VIC. Licensed residential builder managing sites throughout Melbourne corridors.
                 </p>
-                <div className="relative aspect-[16/9] w-full bg-beige border border-orange/15 rounded-sm overflow-hidden flex flex-col items-center justify-center text-center p-4">
+                <div className="relative aspect-[16/9] w-full bg-beige border border-orange/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center text-center p-4">
                   <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000002_1px,transparent_1px),linear-gradient(to_bottom,#00000002_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none" />
                   <MapPin className="w-8 h-8 text-gold animate-pulse mb-2" />
                   <span className="text-charcoal text-xs font-medium uppercase tracking-wider">Melbourne, VIC 3004</span>
@@ -376,7 +351,7 @@ export default function Contact() {
                     href="https://maps.google.com/?q=1424,+1+Queens+Road,+Melbourne+VIC+3004"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-block bg-transparent border border-gold hover:bg-gold hover:text-white text-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 transition-all rounded-sm"
+                    className="mt-3 inline-block bg-transparent border border-gold hover:bg-gold hover:text-white text-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 transition-all rounded-xl"
                   >
                     Get Directions
                   </a>

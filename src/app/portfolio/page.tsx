@@ -200,7 +200,7 @@ export default function Portfolio() {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm border focus:outline-none ${
+                className={`px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-all duration-300 rounded-xl border focus:outline-none ${
                   activeCategory === cat.id
                     ? "bg-gold border-gold text-white font-bold shadow-lg"
                     : "bg-white border-orange/20 text-charcoal hover:border-gold hover:text-gold"
@@ -216,7 +216,7 @@ export default function Portfolio() {
             {filteredConcepts.map((item, idx) => (
               <div
                 key={idx}
-                className="portfolio-card group bg-white border border-orange/15 overflow-hidden shadow-sm hover:shadow-md hover:border-gold/40 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="portfolio-card group bg-white border border-orange/10 overflow-hidden shadow-sm hover:shadow-xl hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 rounded-2xl flex flex-col justify-between"
               >
                 <div>
                   <div className="relative aspect-[16/10] w-full overflow-hidden">
@@ -229,7 +229,7 @@ export default function Portfolio() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                   </div>
                   <div className="p-6 space-y-4">
-                    <span className="text-[10px] text-gold font-semibold uppercase tracking-widest bg-gold/10 border border-orange/20 px-2.5 py-1 rounded-sm inline-block">
+                    <span className="text-[10px] text-gold font-semibold uppercase tracking-widest bg-gold/10 border border-orange/20 px-2.5 py-1 rounded-md inline-block">
                       {item.category === "exteriors"
                         ? "Exterior"
                         : item.category === "interiors"
@@ -252,7 +252,7 @@ export default function Portfolio() {
                 <div className="px-6 pb-6 pt-2">
                   <div className="border-t border-orange/10 pt-4 flex flex-wrap gap-2">
                     {item.specs.map((spec, sIdx) => (
-                      <span key={sIdx} className="text-[10px] text-foreground/60 font-light border border-orange/15 px-2 py-0.5 rounded-sm">
+                      <span key={sIdx} className="text-[10px] text-foreground/60 font-light border border-orange/10 px-2 py-0.5 rounded-md">
                         {spec}
                       </span>
                     ))}
@@ -274,7 +274,7 @@ export default function Portfolio() {
           <div className="pt-4">
             <Link
               href="/contact"
-              className="inline-block bg-gold hover:bg-gold/90 text-white font-semibold uppercase tracking-widest text-xs px-8 py-4 transition-all duration-300 rounded-sm shadow-lg"
+              className="inline-block bg-gold hover:bg-gold/90 text-white font-semibold uppercase tracking-widest text-xs px-8 py-4 transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
             >
               Request Consultation
             </Link>

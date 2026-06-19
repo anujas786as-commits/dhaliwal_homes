@@ -5,12 +5,12 @@ import { sendInquiryEmails } from "@/lib/email";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, phone, email, service, budget, message } = body;
+    const { name, phone = "", email, service = "Not Specified", budget = "Not Specified", message = "" } = body;
 
     // Basic Validation
-    if (!name || !phone || !email || !service || !budget || !message) {
+    if (!name || !email) {
       return NextResponse.json(
-        { error: "All fields are required. Please fill out the entire form." },
+        { error: "Name and Email are required fields." },
         { status: 400 }
       );
     }

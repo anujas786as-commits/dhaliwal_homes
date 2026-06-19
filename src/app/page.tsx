@@ -69,7 +69,7 @@ export default function Home() {
     {
       title: "Home Renovations",
       slug: "renovations",
-      img: "/images/Industrial Design Cafe Interiors.jpg",
+      img: "/images/troy-mortier-UK3vs6Z7PaE-unsplash.jpg",
       desc: "Full-scale interior renovations, bathroom conversions, and custom cabinet joinery refits.",
     },
     {
@@ -87,7 +87,7 @@ export default function Home() {
     {
       title: "Commercial Construction",
       slug: "commercial-construction",
-      img: "/images/central-melbourne-city-riverside-skyline-in-austra-2026-03-25-08-25-38-utc.jpg.jpeg",
+      img: "/images/Industrial Design Cafe Interiors.jpg",
       desc: "Small to medium office blocks, custom shopfront fit-outs, and tilt-slab commercial warehouses.",
     },
   ];
@@ -126,12 +126,12 @@ export default function Home() {
   ];
 
   const galleryImages = [
-    "/images/beautiful-house-exterior-at-twilight-in-suburban-s-2026-03-18-08-25-48-utc.jpg.jpeg",
-    "/images/luxury-house-at-sunny-day-in-vancouver-canada-2026-03-26-11-34-19-utc.jpg.jpeg",
-    "/images/modern-luxury-house-with-landscaped-garden-under-a-2026-03-09-02-55-27-utc.jpg.jpeg",
-    "/images/attractive-suburban-home-with-black-iron-gate-2026-03-26-11-36-08-utc.jpg.jpeg",
     "/images/beautiful-blue-house-on-a-sunny-day-in-vancouver-2026-03-26-09-48-53-utc.jpg.jpeg",
-    "/images/a-suburban-luxury-home-in-a-north-american-city-2026-03-26-09-21-00-utc.jpg.jpeg",
+    "/images/family-embracing-outside-of-modern-home-on-sunny-d-2026-03-25-02-45-12-utc.jpg.jpeg",
+    "/images/leo_visions-fFqqVSi96z0-unsplash.jpg",
+    "/images/queentears-wr-mshjNzupCEg-unsplash.jpg",
+    "/images/troy-mortier-UK3vs6Z7PaE-unsplash.jpg",
+    "/images/nicolas-gonzalez-syol6R3rJQU-unsplash.jpg",
   ];
 
   return (
@@ -249,7 +249,7 @@ export default function Home() {
                 Dhaliwal Homes was established in early 2026 by Devinder Dhaliwal. As a registered builder, Devinder started this company to offer custom home construction focused on structural specifications, clear budgets, and direct site supervision.
               </p>
               <p className="text-foreground/80 font-light leading-relaxed">
-                We coordinate a reliable team of local tradesmen, structural engineers, and drafting professionals across South East Melbourne. Our builds follow Australian construction standards strictly, using quality timber frames, certified slab steel, and dual-layer wet area waterproofing.
+                We coordinate a reliable team of local tradesmen, structural engineers, and drafting professionals across Melbourne. Our builds follow Australian construction standards strictly, using quality timber frames, certified slab steel, and dual-layer wet area waterproofing.
               </p>
 
               {/* Quote Card */}
@@ -287,7 +287,7 @@ export default function Home() {
             {services.map((svc, idx) => (
               <div
                 key={idx}
-                className={`group relative bg-white border border-orange/15 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:border-gold/40 hover:-translate-y-1 flex flex-col justify-between reveal-on-scroll delay-${(idx % 3 + 1) * 100}`}
+                className={`group relative bg-white border border-orange/10 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:border-gold/30 hover:-translate-y-1 flex flex-col justify-between reveal-on-scroll delay-${(idx % 3 + 1) * 100}`}
               >
                 <div>
                   <div className="relative aspect-[16/10] w-full overflow-hidden">
@@ -340,7 +340,7 @@ export default function Home() {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-gold/10 border border-orange/30 p-2.5 rounded-sm mr-4 mt-1">
+                  <div className="bg-gold/10 border border-orange/20 p-2.5 rounded-xl mr-4 mt-1">
                     <HardHat className="w-5 h-5 text-gold" />
                   </div>
                   <div>
@@ -352,7 +352,7 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-gold/10 border border-orange/30 p-2.5 rounded-sm mr-4 mt-1">
+                  <div className="bg-gold/10 border border-orange/20 p-2.5 rounded-xl mr-4 mt-1">
                     <Layers className="w-5 h-5 text-gold" />
                   </div>
                   <div>
@@ -364,11 +364,11 @@ export default function Home() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="bg-gold/10 border border-orange/30 p-2.5 rounded-sm mr-4 mt-1">
+                  <div className="bg-gold/10 border border-orange/20 p-2.5 rounded-xl mr-4 mt-1">
                     <Compass className="w-5 h-5 text-gold" />
                   </div>
                   <div>
-                    <h4 className="text-charcoal text-base font-semibold uppercase tracking-wider mb-1">Local South East Trades</h4>
+                    <h4 className="text-charcoal text-base font-semibold uppercase tracking-wider mb-1">Local Melbourne Trades</h4>
                     <p className="text-foreground/70 text-sm font-light leading-relaxed">
                       We source reliable, licensed sub-contractors in Pakenham, Berwick, Officer, and surrounding areas. This ensures local trade knowledge and quick response times.
                     </p>
@@ -380,17 +380,17 @@ export default function Home() {
             {/* Visual Inspiration Grid */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm border border-orange/10">
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-orange/10 shadow-sm">
                   <Image
-                    src="/images/a-suburban-luxury-home-in-a-north-american-city-2026-01-11-09-38-23-utc.jpg.jpeg"
+                    src="/images/victorian-style-homes-in-san-francisco-2026-03-09-08-13-52-utc.jpg.jpeg"
                     alt="Luxury exterior materials"
                     fill
                     className="object-cover"
                   />
                 </div>
-                <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-orange/10">
+                <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-orange/10 shadow-sm">
                   <Image
-                    src="/images/Industrial Design Cafe Interiors.jpg"
+                    src="/images/cole-johnson-cOhe8v9PXmI-unsplash.jpg"
                     alt="Premium internal finishes"
                     fill
                     className="object-cover"
@@ -398,7 +398,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="space-y-4 pt-8">
-                <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-orange/10">
+                <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-orange/10 shadow-sm">
                   <Image
                     src="/images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg"
                     alt="Architectural details"
@@ -406,7 +406,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm border border-orange/10">
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-orange/10 shadow-sm">
                   <Image
                     src="/images/attractive-suburban-home-with-black-iron-gate-2026-03-26-11-36-08-utc.jpg.jpeg"
                     alt="Completed rendering style"
@@ -440,7 +440,7 @@ export default function Home() {
             {galleryImages.map((imgSrc, idx) => (
               <div
                 key={idx}
-                className="group relative aspect-[4/3] w-full overflow-hidden border border-orange/10 rounded-sm shadow-md"
+                className="group relative aspect-[4/3] w-full overflow-hidden border border-orange/5 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <Image
                   src={imgSrc}
@@ -547,11 +547,11 @@ export default function Home() {
                 Service Hubs
               </span>
               <h2 className="text-3xl sm:text-5xl font-serif text-charcoal tracking-tight">
-                Building Throughout South East Melbourne
+                Building Throughout Melbourne
               </h2>
               <div className="h-[1px] w-20 bg-gold" />
               <p className="text-foreground/75 font-light leading-relaxed">
-                Dhaliwal Homes is based in Pakenham and serves clients across Melbourne's rapidly expanding South Eastern growth corridors.
+                Dhaliwal Homes is based in Pakenham and serves clients across Melbourne's rapidly expanding Melbourne growth corridors.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -561,7 +561,7 @@ export default function Home() {
                   "Cranbourne VIC 3977",
                   "Officer VIC 3809",
                   "Narre Warren VIC 3805",
-                  "South East Suburbs",
+                  "Melbourne Suburbs",
                   "Gippsland Corridor",
                 ].map((suburb, idx) => (
                   <div key={idx} className="flex items-center text-foreground/80 text-sm">
@@ -604,7 +604,7 @@ export default function Home() {
       <section className="relative bg-white py-16 text-foreground overflow-hidden border-t border-orange/10">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/a-suburban-luxury-home-in-a-north-american-city-2026-03-26-09-21-00-utc.jpg.jpeg"
+            src="/images/san-francisco-skyline-with-famous-painted-ladies-h-2026-03-19-02-14-56-utc.jpg.jpeg"
             alt="Dhaliwal Homes Custom Construction Rendering Background"
             fill
             className="object-cover opacity-15"

@@ -12,11 +12,11 @@ export interface IInquiry extends Document {
 
 const InquirySchema: Schema = new Schema({
   name: { type: String, required: true, trim: true },
-  phone: { type: String, required: true, trim: true },
+  phone: { type: String, required: false, default: "", trim: true },
   email: { type: String, required: true, trim: true, lowercase: true },
-  service: { type: String, required: true },
-  budget: { type: String, required: true },
-  message: { type: String, required: true },
+  service: { type: String, required: false, default: "Not Specified" },
+  budget: { type: String, required: false, default: "Not Specified" },
+  message: { type: String, required: false, default: "" },
   createdAt: { type: Date, default: Date.now },
 });
 

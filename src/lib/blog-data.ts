@@ -156,7 +156,7 @@ export const blogPosts: BlogPost[] = [
     summary: "Building mixed-use spaces requires balancing commercial zoning laws with residential building requirements under the NCC.",
     img: "/images/central-melbourne-city-riverside-skyline-in-austra-2026-03-25-08-25-38-utc.jpg.jpeg",
     content: `
-      <p>Mixed-use commercial construction—such as ground-floor retail storefronts topped by modern residential apartments—is growing in popularity across South East Melbourne's main business districts. These multi-use projects require navigating unique council zones and building safety regulations.</p>
+      <p>Mixed-use commercial construction—such as ground-floor retail storefronts topped by modern residential apartments—is growing in popularity across Melbourne's main business districts. These multi-use projects require navigating unique council zones and building safety regulations.</p>
       
       <h3>1. Fire Separation Metrics</h3>
       <p>Under the National Construction Code (NCC), mixed-use buildings have strict fire separation guidelines. Commercial zones (like cafes or retail shops) must be separated from residential spaces above by fire-rated concrete slabs and plasterboard barriers, preventing thermal heat and smoke from spreading.</p>
