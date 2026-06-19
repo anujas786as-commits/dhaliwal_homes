@@ -7,6 +7,8 @@ import { MaintenanceProvider } from "@/components/ui/maintenance-provider";
 import { SmoothScrollProvider } from "@/components/ui/smooth-scroll-provider";
 import "./globals.css";
 
+export const dynamic = "force-dynamic";
+
 const sans = Plus_Jakarta_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
