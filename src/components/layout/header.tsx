@@ -46,7 +46,9 @@ export const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo link */}
           <Link href="/" className="flex-shrink-0" onClick={closeMenu}>
-            <Logo variant="main" size={170} />
+            <div className={`transition-all duration-350 ${scrolled ? "bg-transparent p-0" : "bg-white/95 px-4 py-2 rounded-xl border border-white/20 shadow-md backdrop-blur-md"}`}>
+              <Logo variant="main" size={scrolled ? 240 : 220} />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
