@@ -12,8 +12,11 @@ export const Logo: React.FC<LogoProps> = ({
   className = "",
   variant = "main",
   size = 200,
+  theme = "light",
 }) => {
-  const logoSrc = "/images/logo/WhatsApp Image 2026-06-07 at 3.10.27 PM (1).png";
+  const logoSrc = theme === "dark"
+    ? "/images/logo/logo_light.png"
+    : "/images/logo/WhatsApp Image 2026-06-07 at 3.10.27 PM (1).png";
   
   // Parse numeric width size
   const widthVal = typeof size === "string" ? parseInt(size, 10) || 200 : size;
