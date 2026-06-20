@@ -78,7 +78,7 @@ export async function sendInquiryEmails(payload: EmailPayload) {
         </div>
       </div>
       <div style="text-align: center; font-size: 12px; color: #888; border-top: 1px solid #ececec; padding-top: 15px; margin-top: 15px;">
-        This email was sent from the website contact system. Established January 2026.
+        This email was sent from the website contact system.
       </div>
     </div>
   `;

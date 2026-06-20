@@ -154,7 +154,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 py-14 text-center">
           <span className="inline-flex items-center gap-2 bg-gold/10 border border-orange/30 text-gold text-xs font-semibold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-6 gsap-hero-title">
-            <Award className="w-3.5 h-3.5" /> ESTABLISHED JANUARY 2026
+            <Award className="w-3.5 h-3.5" /> REGISTERED DOMESTIC BUILDER
           </span>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight text-white mb-6 font-serif leading-[1.15] gsap-hero-title">
             Building Melbourne's Future,<br />
@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="absolute bottom-6 left-6 right-6 bg-white/95 border border-orange/20 p-5 backdrop-blur-sm rounded-sm">
                   <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-1">Owner & Founder</p>
                   <h4 className="text-charcoal text-lg font-serif">Devinder Dhaliwal</h4>
-                  <p className="text-foreground/70 text-xs font-light">Established Dhaliwal Homes &bull; January 2026</p>
+                  <p className="text-foreground/70 text-xs font-light">Registered Domestic Builder</p>
                 </div>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function Home() {
               </h2>
               <div className="h-[1px] w-20 bg-gold" />
               <p className="text-foreground/80 font-light leading-relaxed">
-                Dhaliwal Homes was established in early 2026 by Devinder Dhaliwal. As a registered builder, Devinder started this company to offer custom home construction focused on structural specifications, clear budgets, and direct site supervision.
+                Dhaliwal Homes was founded by Devinder Dhaliwal. As a registered builder, Devinder started this company to offer custom home construction focused on structural specifications, clear budgets, and direct site supervision.
               </p>
               <p className="text-foreground/80 font-light leading-relaxed">
                 We coordinate a reliable team of local tradesmen, structural engineers, and drafting professionals across Melbourne. Our builds follow Australian construction standards strictly, using quality timber frames, certified slab steel, and dual-layer wet area waterproofing.

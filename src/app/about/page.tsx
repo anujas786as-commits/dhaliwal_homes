@@ -87,7 +87,7 @@ export default function About() {
               <div className="bg-gradient-to-br from-beige to-white border border-orange/10 p-6 rounded-2xl shadow-xs flex items-center space-x-4">
                 <Calendar className="w-10 h-10 text-gold flex-shrink-0" />
                 <div>
-                  <h4 className="text-charcoal text-sm font-semibold uppercase tracking-wider">Established January 2026</h4>
+                  <h4 className="text-charcoal text-sm font-semibold uppercase tracking-wider">Fully Licensed & Registered</h4>
                   <p className="text-foreground/70 text-xs font-light mt-1">
                     Operating under DSD Holdings Pty Ltd. Fully licensed and committed to fixed-price HIA contracts and transparent project milestones.
                   </p>

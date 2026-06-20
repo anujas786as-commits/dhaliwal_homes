@@ -131,7 +131,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
               {/* Article Share Footer */}
               <div className="border-t border-orange/10 pt-8 mt-12 flex items-center justify-between">
-                <span className="text-xs text-foreground/50">Shared by Dhaliwal Homes &bull; Established 2026</span>
+                <span className="text-xs text-foreground/50">Shared by Dhaliwal Homes</span>
                 <div className="flex items-center space-x-3 text-gold text-xs font-semibold uppercase tracking-wider">
                   <Heart className="w-4 h-4 text-gold flex-shrink-0" />
                   <span>Melbourne Building Resource</span>

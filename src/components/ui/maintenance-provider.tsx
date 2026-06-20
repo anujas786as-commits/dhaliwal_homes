@@ -30,9 +30,7 @@ export function MaintenanceProvider({
               Dhaliwal <span className="text-[#c49a3c]">Homes</span>
             </span>
           </div>
-          <span className="text-xs text-[#c49a3c] tracking-[0.3em] font-bold uppercase border border-[#c49a3c]/35 px-3 py-1 rounded-sm bg-[#c49a3c]/5">
-            EST. 2026
-          </span>
+
         </header>
 
         {/* Main Content */}

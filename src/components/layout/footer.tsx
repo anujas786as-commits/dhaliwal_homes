@@ -100,10 +100,7 @@ export const Footer: React.FC = () => {
                   admin@dhaliwalhomes.com.au
                 </a>
               </li>
-              <li className="flex items-center text-xs text-foreground/70">
-                <Calendar className="w-4 h-4 mr-3 text-gold flex-shrink-0" />
-                <span>Established: January 2026</span>
-              </li>
+
             </ul>
           </div>
         </div>

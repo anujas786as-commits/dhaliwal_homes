@@ -127,7 +127,7 @@ export default function Portfolio() {
           </h1>
           <div className="h-[1px] w-20 bg-gold mx-auto mt-4 gsap-hero-title" />
           <p className="max-w-2xl mx-auto text-white/80 font-light text-base sm:text-lg gsap-hero-title">
-            Dhaliwal Homes is a newly established premium builder (Jan 2026). Explore our design templates, materials, and potential renovation outcomes.
+            Dhaliwal Homes is a premium custom builder. Explore our design templates, materials, and potential renovation outcomes.
           </p>
         </div>
       </section>

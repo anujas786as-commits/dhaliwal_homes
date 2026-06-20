@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Dhaliwal Homes | Custom & Luxury Home Builder Melbourne",
     description:
-      "Established in January 2026, Dhaliwal Homes is a boutique Melbourne residential builder focused on structural quality, direct builder access, and fixed-price transparency.",
+      "Dhaliwal Homes is a boutique Melbourne residential builder focused on structural quality, direct builder access, and fixed-price transparency.",
     url: "https://dhaliwalhomes.com.au/about",
     images: [
       {
