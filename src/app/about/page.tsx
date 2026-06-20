@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { WhatsAppWidget } from "@/components/ui/whatsapp-widget";
-import { ShieldAlert, Compass, CheckCircle2, Award, HardHat, Calendar, Target, Eye } from "lucide-react";
+import { ShieldAlert, Compass, CheckCircle2, Award, HardHat, Calendar, Target, Eye, Quote } from "lucide-react";
 
 export default function About() {
   const values = [
@@ -57,29 +57,29 @@ export default function About() {
         </div>
       </section>
 
-      {/* Narrative & Founder Segment */}
-      <section className="bg-white py-14 text-foreground">
+      {/* Brand Narrative Section */}
+      <section className="bg-white pt-16 pb-12 text-foreground">
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             {/* Text column */}
             <div className="lg:col-span-7 space-y-6">
               <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase block">
-                Founder Story
+                Our Story & Philosophy
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif text-charcoal leading-snug">
-                A Local Builder Focused on Structural Quality
+                Building Melbourne's Premium Residences
               </h2>
               <div className="h-[1px] w-16 bg-gold" />
               
               <div className="space-y-4 text-foreground/85 font-light leading-relaxed">
                 <p>
-                  In the residential construction sector, client communication and site supervision can often become secondary to volume targets. This can lead to structural shortcuts, scheduling delays, and poor oversight on-site.
+                  At <strong>Dhaliwal Homes</strong>, we believe that building a home is a deeply personal and significant investment. Founded on the values of absolute transparency, structural integrity, and architectural precision, our focus has always been to provide Melbourne homeowners with an alternative to standard volume builders.
                 </p>
                 <p>
-                  Devinder Dhaliwal established <strong>Dhaliwal Homes</strong> in January 2026 to offer an alternative to volume builds. Based in Pakenham, we focus on custom residential homes, second-storey extensions, and full-scale structural renovations across Melbourne.
+                  Based in Pakenham, we specialize in high-quality custom residential homes, second-storey extensions, and full-scale structural renovations across Melbourne's South-East and broader metropolitan area. We deliberately limit our active construction pipeline, allowing us to focus our full resources on ensuring every layout and finish is executed perfectly.
                 </p>
                 <p>
-                  "My focus is on managing a limited number of active builds at any one time. This allows me to personally supervise critical phases, including slab pours, timber framing layouts, waterproofing, and internal fix stages," says Devinder.
+                  We partner with top-tier local trades, designers, and structural engineers to deliver properties that are as durable as they are beautiful. By prioritizing quality structural specifications—including reinforced timber framing and certified concrete pours—we build homes that stand the test of time.
                 </p>
               </div>
 
@@ -89,25 +89,79 @@ export default function About() {
                 <div>
                   <h4 className="text-charcoal text-sm font-semibold uppercase tracking-wider">Established January 2026</h4>
                   <p className="text-foreground/70 text-xs font-light mt-1">
-                  Incorporated under DSD Holdings Pty Ltd, committed to quality construction, structural integrity, and transparent project delivery.
+                    Operating under DSD Holdings Pty Ltd. Fully licensed and committed to fixed-price HIA contracts and transparent project milestones.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Visual Column */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="relative aspect-[4/5] w-full overflow-hidden border border-gold/20 rounded-2xl shadow-xl">
+            <div className="lg:col-span-5 space-y-4">
+              <div className="relative aspect-[4/3] w-full overflow-hidden border border-gold/20 rounded-2xl shadow-xl">
                 <Image
-                  src="/images/logo/WhatsApp Image 2026-06-09 at 10.54.35 AM.jpeg"
-                  alt="Founder Devinder Dhaliwal representation"
+                  src="/images/modern-luxury-house-with-landscaped-garden-under-a-2026-03-09-02-55-27-utc.jpg.jpeg"
+                  alt="Dhaliwal Homes premium custom residence project"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="text-center bg-gradient-to-br from-beige to-white border border-orange/10 p-5 rounded-2xl">
+              <div className="text-center bg-gradient-to-br from-beige to-white border border-orange/10 p-4 rounded-2xl">
+                <p className="text-gold text-xs font-bold uppercase tracking-widest">Designed for Living</p>
+                <p className="text-foreground/70 text-[11px] font-light">Custom residential construction with structural specifications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership / Builder Section */}
+      <section className="bg-beige/40 py-16 border-t border-orange/10 text-foreground">
+        <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            {/* Visual Column */}
+            <div className="lg:col-span-5 order-last lg:order-first">
+              <div className="relative aspect-[4/5] w-full overflow-hidden border border-gold/20 rounded-2xl shadow-xl">
+                <Image
+                  src="/images/logo/WhatsApp Image 2026-06-09 at 10.54.35 AM.jpeg"
+                  alt="Builder and Founder Devinder Dhaliwal"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-center bg-white border border-orange/10 p-4 rounded-2xl mt-4 shadow-sm">
                 <p className="text-gold text-xs font-bold uppercase tracking-widest">Devinder Dhaliwal</p>
-                <p className="text-foreground/70 text-[11px] font-light">Managing Director & Builder | Dhaliwal Homes</p>
+                <p className="text-foreground/70 text-[11px] font-light">Managing Director & Registered Builder (DB-U)</p>
+              </div>
+            </div>
+
+            {/* Text column */}
+            <div className="lg:col-span-7 space-y-6">
+              <span className="text-gold text-xs font-bold tracking-[0.3em] uppercase block">
+                Meet The Builder
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-serif text-charcoal leading-snug">
+                Direct Supervision & Personal Accountability
+              </h2>
+              <div className="h-[1px] w-16 bg-gold" />
+              
+              <div className="space-y-4 text-foreground/85 font-light leading-relaxed">
+                <p>
+                  At Dhaliwal Homes, you don't deal with sales representatives or standard corporate managers. Devinder Dhaliwal, our founder and licensed domestic builder, supervises every project directly. 
+                </p>
+                <p>
+                  With years of hands-on expertise in Melbourne's residential construction sector, Devinder oversees each critical phase of the build. This includes on-site supervision during soil testing, foundation concrete pours, timber framing layouts, and internal fixing stages.
+                </p>
+              </div>
+
+              {/* Quote Block */}
+              <div className="relative border-l-2 border-gold pl-6 py-2 bg-white/60 rounded-r-md">
+                <Quote className="absolute top-2 right-4 w-12 h-12 text-orange/10 -scale-x-100" />
+                <p className="text-charcoal italic text-sm font-serif leading-relaxed mb-2">
+                  "My focus is on managing a limited number of active builds at any one time. This allows me to personally supervise critical phases, ensuring that your plans are built exactly as drafted with structural integrity from the footings to the roof."
+                </p>
+                <cite className="text-gold text-xs font-semibold uppercase tracking-wider block">
+                  — Devinder Dhaliwal
+                </cite>
               </div>
             </div>
           </div>
