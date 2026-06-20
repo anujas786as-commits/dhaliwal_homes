@@ -131,7 +131,7 @@ export default function BlogIndex() {
 
                     {/* Metadata & Title */}
                     <div className="p-6 space-y-4">
-                      <div className="flex items-center justify-between text-[11px] text-foreground/60 font-light">
+                      <div className="flex items-center justify-between text-xs text-foreground/60 font-light">
                         <span className="flex items-center">
                           <Calendar className="w-3.5 h-3.5 mr-1 text-gold" /> {post.date}
                         </span>
@@ -139,7 +139,7 @@ export default function BlogIndex() {
                           <Clock className="w-3.5 h-3.5 mr-1 text-gold" /> {post.readTime}
                         </span>
                       </div>
-                      <span className="text-[10px] text-gold font-semibold uppercase tracking-wider bg-gold/10 border border-gold/25 px-2.5 py-1 rounded-sm inline-block">
+                      <span className="text-xs text-gold font-semibold uppercase tracking-wider bg-gold/10 border border-gold/25 px-2.5 py-1 rounded-sm inline-block">
                         {post.category}
                       </span>
                       <h3 className="text-charcoal font-serif text-lg leading-snug group-hover:text-gold transition-colors duration-200">
@@ -185,7 +185,7 @@ export default function BlogIndex() {
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <h2 className="text-3xl sm:text-5xl font-serif text-charcoal">Have a Specific Design Project?</h2>
           <p className="text-foreground/75 font-light max-w-lg mx-auto text-sm sm:text-base">
-            Reach out to Devinder Dhaliwal to schedule a feasibility session and outline local planning requirements.
+            Reach out to a Dhaliwal Homes expert to schedule a feasibility session and outline local planning requirements.
           </p>
           <div className="pt-4">
             <Link

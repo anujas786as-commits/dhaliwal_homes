@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Building Services | Dhaliwal Homes Melbourne",
     description:
-      "From custom home builds to knockdown rebuilds and commercial fitouts — Dhaliwal Homes is your registered domestic builder in Pakenham, Berwick, Cranbourne & Melbourne.",
+      "From custom home builds to knockdown rebuilds and commercial fitouts — Dhaliwal Homes is your registered domestic builder serving Melbourne Metropolitan and throughout Victoria.",
     url: "https://dhaliwalhomes.com.au/services",
     images: [
       {

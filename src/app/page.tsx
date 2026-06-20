@@ -96,7 +96,7 @@ export default function Home() {
     {
       number: "01",
       title: "Initial Consultation",
-      desc: "We review your site dimensions, title overlays, and design goals at our Pakenham office or directly on-site.",
+      desc: "We review your site dimensions, title overlays, and design goals at our Melbourne office or directly on-site.",
     },
     {
       number: "02",
@@ -181,7 +181,7 @@ export default function Home() {
 
         {/* Dynamic down-arrow indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-60 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-white/70">Scroll</span>
+          <span className="text-xs uppercase tracking-[0.3em] text-white/70">Scroll</span>
           <ChevronDown className="w-4 h-4 text-gold animate-bounce" />
         </div>
       </section>
@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="absolute bottom-6 left-6 right-6 bg-white/95 border border-orange/20 p-5 backdrop-blur-sm rounded-sm">
                   <p className="text-gold text-xs font-semibold uppercase tracking-widest mb-1">Owner & Founder</p>
                   <h4 className="text-charcoal text-lg font-serif">Devinder Dhaliwal</h4>
-                  <p className="text-foreground/70 text-[11px] font-light">Established Dhaliwal Homes &bull; January 2026</p>
+                  <p className="text-foreground/70 text-xs font-light">Established Dhaliwal Homes &bull; January 2026</p>
                 </div>
               </div>
             </div>
@@ -370,7 +370,7 @@ export default function Home() {
                   <div>
                     <h4 className="text-charcoal text-base font-semibold uppercase tracking-wider mb-1">Local Melbourne Trades</h4>
                     <p className="text-foreground/70 text-sm font-light leading-relaxed">
-                      We source reliable, licensed sub-contractors in Pakenham, Berwick, Officer, and surrounding areas. This ensures local trade knowledge and quick response times.
+                      We source reliable, licensed sub-contractors across Melbourne Metropolitan and throughout Victoria. This ensures local trade knowledge and quick response times.
                     </p>
                   </div>
                 </div>
@@ -547,22 +547,22 @@ export default function Home() {
                 Service Hubs
               </span>
               <h2 className="text-3xl sm:text-5xl font-serif text-charcoal tracking-tight">
-                Building Throughout Melbourne
+                Building Throughout Melbourne & Victoria
               </h2>
               <div className="h-[1px] w-20 bg-gold" />
               <p className="text-foreground/75 font-light leading-relaxed">
-                Dhaliwal Homes is based in Pakenham and serves clients across Melbourne's rapidly expanding Melbourne growth corridors.
+                Dhaliwal Homes is based in Melbourne and serves clients across Melbourne's rapidly expanding growth corridors, Melbourne Metropolitan, and throughout Victoria.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
+                  "Melbourne Metropolitan",
                   "Melbourne Metro",
-                  "Pakenham VIC 3810",
-                  "Berwick VIC 3806",
-                  "Cranbourne VIC 3977",
-                  "Officer VIC 3809",
-                  "Narre Warren VIC 3805",
                   "Melbourne Suburbs",
-                  "Gippsland Corridor",
+                  "Growth Corridors",
+                  "Geelong & Surf Coast",
+                  "Ballarat & Bendigo",
+                  "Gippsland Region",
+                  "Wider Victoria",
                 ].map((suburb, idx) => (
                   <div key={idx} className="flex items-center text-foreground/80 text-sm">
                     <div className="w-1.5 h-1.5 bg-gold rounded-full mr-3" />
@@ -618,7 +618,7 @@ export default function Home() {
             <span className="text-gradient-gold font-normal">Extraordinary Together</span>
           </h2>
           <p className="max-w-xl mx-auto text-foreground/75 font-light text-base sm:text-lg leading-relaxed">
-            Partner with Melbourne's dedicated custom residential builder. Contact Devinder Dhaliwal today to coordinate your initial concept exploration.
+            Partner with Melbourne's dedicated custom residential builder. Contact a Dhaliwal Homes expert today to coordinate your initial concept exploration.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

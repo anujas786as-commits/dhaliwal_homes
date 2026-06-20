@@ -96,8 +96,8 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="w-4 h-4 mr-3 text-gold flex-shrink-0" />
-                <a href="mailto:devinder@hotmail.com.au" className="hover:text-gold transition-colors duration-200 font-light">
-                  devinder@hotmail.com.au
+                <a href="mailto:admin@dhaliwalhomes.com.au" className="hover:text-gold transition-colors duration-200 font-light">
+                  admin@dhaliwalhomes.com.au
                 </a>
               </li>
               <li className="flex items-center text-xs text-foreground/70">
@@ -111,7 +111,7 @@ export const Footer: React.FC = () => {
         {/* Targeted Suburbs Covered */}
         <div className="border-t border-orange/10 mt-12 pt-8 text-center">
           <p className="text-xs text-foreground/60 font-light tracking-wide">
-            <strong>Service Areas:</strong> Melbourne &bull; Pakenham &bull; Berwick &bull; Officer &bull; Cranbourne &bull; Narre Warren &bull; Melbourne Metro
+            <strong>Service Areas:</strong> Melbourne Metropolitan and throughout Victoria
           </p>
         </div>
 

@@ -229,7 +229,7 @@ export default function Portfolio() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                   </div>
                   <div className="p-6 space-y-4">
-                    <span className="text-[10px] text-gold font-semibold uppercase tracking-widest bg-gold/10 border border-orange/20 px-2.5 py-1 rounded-md inline-block">
+                    <span className="text-xs text-gold font-semibold uppercase tracking-widest bg-gold/10 border border-orange/20 px-2.5 py-1 rounded-md inline-block">
                       {item.category === "exteriors"
                         ? "Exterior"
                         : item.category === "interiors"
@@ -252,7 +252,7 @@ export default function Portfolio() {
                 <div className="px-6 pb-6 pt-2">
                   <div className="border-t border-orange/10 pt-4 flex flex-wrap gap-2">
                     {item.specs.map((spec, sIdx) => (
-                      <span key={sIdx} className="text-[10px] text-foreground/60 font-light border border-orange/10 px-2 py-0.5 rounded-md">
+                      <span key={sIdx} className="text-xs text-foreground/60 font-light border border-orange/10 px-2 py-0.5 rounded-md">
                         {spec}
                       </span>
                     ))}
@@ -269,7 +269,7 @@ export default function Portfolio() {
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <h2 className="text-3xl sm:text-5xl font-serif text-charcoal">Let's Design Your Dream Space</h2>
           <p className="text-foreground/75 font-light max-w-lg mx-auto text-sm sm:text-base">
-            Reach out to our founder Devinder Dhaliwal today to coordinate your initial blueprint feasibility session.
+            Reach out to a Dhaliwal Homes expert today to coordinate your initial blueprint feasibility session.
           </p>
           <div className="pt-4">
             <Link

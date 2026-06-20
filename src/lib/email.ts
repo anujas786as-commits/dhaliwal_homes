@@ -36,7 +36,7 @@ const getTransporter = () => {
 
 export async function sendInquiryEmails(payload: EmailPayload) {
   const { name, phone, email, service, budget, message } = payload;
-  const adminRecipient = "devinder@hotmail.com.au";
+  const adminRecipient = "admin@dhaliwalhomes.com.au";
 
   // Admin Notification HTML
   const adminHtml = `
@@ -46,7 +46,7 @@ export async function sendInquiryEmails(payload: EmailPayload) {
         <p style="color: #f4f1ea; margin: 5px 0 0 0; font-size: 12px; letter-spacing: 3px;">NEW INQUIRY RECEIVED</p>
       </div>
       <div style="padding: 20px 10px;">
-        <p style="font-size: 16px;">Hello Devinder,</p>
+        <p style="font-size: 16px;">Hello Team,</p>
         <p style="font-size: 15px;">A new lead has submitted a consultation request on the website. Here are the details:</p>
         
         <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
@@ -93,7 +93,7 @@ export async function sendInquiryEmails(payload: EmailPayload) {
       <div style="padding: 20px 10px; line-height: 1.6;">
         <p style="font-size: 16px; font-weight: bold;">Dear ${name},</p>
         <p style="font-size: 15px;">Thank you for contacting Dhaliwal Homes. We have successfully received your project inquiry regarding <strong>${service}</strong>.</p>
-        <p style="font-size: 15px;">Our founder, <strong>Devinder Dhaliwal</strong>, and our construction planning team are reviewing your request. We will contact you at <strong>${phone}</strong> or via this email address within 24 to 48 business hours to discuss the next steps and schedule a detailed consultation.</p>
+        <p style="font-size: 15px;">A <strong>Dhaliwal Homes expert</strong> and our construction planning team are reviewing your request. We will contact you at <strong>${phone}</strong> or via this email address within 24 to 48 business hours to discuss the next steps and schedule a detailed consultation.</p>
         
         <div style="margin: 20px 0; padding: 15px; border: 1px solid #e2d9c6; background-color: #fcfbfa; border-radius: 6px;">
           <h4 style="margin: 0 0 8px 0; color: #d4af37; font-family: Georgia, serif;">Your Inquiry Summary</h4>

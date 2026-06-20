@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us – Book a Free Consultation",
   description:
-    "Get in touch with Dhaliwal Homes to discuss your custom home, renovation, or extension project. Book a free feasibility consultation with founder Devinder Dhaliwal in Pakenham, Melbourne.",
+    "Get in touch with Dhaliwal Homes to discuss your custom home, renovation, or extension project. Book a free feasibility consultation with a Dhaliwal Homes expert in Melbourne.",
   alternates: {
     canonical: "https://dhaliwalhomes.com.au/contact",
   },
   openGraph: {
     title: "Contact Dhaliwal Homes | Free Consultation Melbourne",
     description:
-      "Ready to start your custom home build or renovation? Contact Devinder Dhaliwal at Dhaliwal Homes for a free feasibility consultation in Melbourne.",
+      "Ready to start your custom home build or renovation? Contact a Dhaliwal Homes expert at Dhaliwal Homes for a free feasibility consultation in Melbourne.",
     url: "https://dhaliwalhomes.com.au/contact",
     images: [
       {

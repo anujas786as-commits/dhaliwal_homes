@@ -33,8 +33,8 @@ export const WhatsAppWidget: React.FC = () => {
         }`}
       >
         <div className="flex flex-col">
-          <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider">Online Support</span>
-          <span className="text-charcoal font-sans">Chat with Devinder</span>
+          <span className="text-xs text-gray-400 font-normal uppercase tracking-wider">Online Support</span>
+          <span className="text-charcoal font-sans">Chat with an expert</span>
         </div>
         {/* Triangle arrow */}
         <div className="absolute right-[-6px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-white" />

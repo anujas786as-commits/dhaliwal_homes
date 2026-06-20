@@ -83,7 +83,7 @@ export default function Contact() {
         setStatus({
           loading: false,
           success: true,
-          message: "Thank you! Your inquiry was submitted. Devinder and the team will get in touch shortly.",
+          message: "Thank you! Your inquiry was submitted. A Dhaliwal Homes expert will get in touch shortly.",
         });
         // Clear form
         setFormData({
@@ -324,8 +324,8 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-gold mr-4 flex-shrink-0" />
                     <div>
                       <h4 className="text-charcoal text-xs font-semibold uppercase tracking-wider">Email Address</h4>
-                      <a href="mailto:devinder@hotmail.com.au" className="text-foreground/80 hover:text-gold text-sm font-light transition-colors mt-0.5 inline-block">
-                        devinder@hotmail.com.au
+                      <a href="mailto:admin@dhaliwalhomes.com.au" className="text-foreground/80 hover:text-gold text-sm font-light transition-colors mt-0.5 inline-block">
+                        admin@dhaliwalhomes.com.au
                       </a>
                     </div>
                   </li>
@@ -351,7 +351,7 @@ export default function Contact() {
                     href="https://maps.google.com/?q=1424,+1+Queens+Road,+Melbourne+VIC+3004"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-block bg-transparent border border-gold hover:bg-gold hover:text-white text-gold text-[10px] font-bold uppercase tracking-widest px-4 py-2 transition-all rounded-xl"
+                    className="mt-3 inline-block bg-transparent border border-gold hover:bg-gold hover:text-white text-gold text-xs font-bold uppercase tracking-widest px-4 py-2 transition-all rounded-xl"
                   >
                     Get Directions
                   </a>

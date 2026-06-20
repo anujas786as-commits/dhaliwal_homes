@@ -109,9 +109,9 @@ export default async function RootLayout({
     "url": "https://dhaliwalhomes.com.au",
     "logo": "https://dhaliwalhomes.com.au/images/logo/fav.png",
     "image": "https://dhaliwalhomes.com.au/images/beautiful-house-exterior-at-twilight-in-suburban-s-2026-03-18-08-25-48-utc.jpg.jpeg",
-    "description": "Bespoke Melbourne residential builder specializing in luxury custom homes, multi-generational extensions, modern renovations, and knockdown-rebuilds in Pakenham and Melbourne suburbs.",
+    "description": "Bespoke Melbourne residential builder specializing in luxury custom homes, multi-generational extensions, modern renovations, and knockdown-rebuilds in Melbourne Metropolitan and throughout Victoria.",
     "telephone": "+61433 704 645",
-    "email": "devinder@hotmail.com.au",
+    "email": "admin@dhaliwalhomes.com.au",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1424, 1 Queens Road",
@@ -127,12 +127,8 @@ export default async function RootLayout({
     },
     "areaServed": [
       "Melbourne",
-      "Pakenham",
-      "Berwick",
-      "Officer",
-      "Cranbourne",
-      "Narre Warren",
-      "Melbourne"
+      "Melbourne Metropolitan",
+      "Victoria"
     ],
     "priceRange": "$$$$"
   };

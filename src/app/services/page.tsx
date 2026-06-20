@@ -69,7 +69,7 @@ export default function Services() {
     },
     {
       q: "Do you build outside of Melbourne?",
-      a: "We are based in Pakenham and focus primarily on Pakenham, Berwick, Officer, Cranbourne, Narre Warren, and the wider Melbourne. However, we can take on premium architectural projects in outer areas on a case-by-case basis.",
+      a: "We are based in Melbourne and focus primarily on Melbourne Metropolitan, rapidly expanding growth corridors, and throughout Victoria. However, we can take on premium architectural projects in outer areas on a case-by-case basis.",
     },
   ];
 
@@ -207,7 +207,7 @@ export default function Services() {
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <h2 className="text-3xl sm:text-5xl font-serif text-charcoal">Let's Design Your Dream Project</h2>
           <p className="text-foreground/75 font-light max-w-lg mx-auto text-sm sm:text-base">
-            Reach out to our builder Devinder Dhaliwal to discuss drafting layouts, block boundaries, or get structural suggestions.
+            Reach out to a Dhaliwal Homes expert to discuss drafting layouts, block boundaries, or get structural suggestions.
           </p>
           <div className="pt-4">
             <Link

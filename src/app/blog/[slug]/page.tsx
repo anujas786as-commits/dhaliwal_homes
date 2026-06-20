@@ -94,13 +94,13 @@ export default async function BlogPostPage({ params }: PageProps) {
               {/* Header Details */}
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 gsap-hero-title">
-                  <span className="text-[10px] text-gold font-semibold uppercase tracking-wider bg-gold/10 border border-gold/25 px-2.5 py-1 rounded-sm">
+                  <span className="text-xs text-gold font-semibold uppercase tracking-wider bg-gold/10 border border-gold/25 px-2.5 py-1 rounded-sm">
                     {post.category}
                   </span>
-                  <span className="text-[11px] text-foreground/60 font-light flex items-center">
+                  <span className="text-xs text-foreground/60 font-light flex items-center">
                     <Calendar className="w-3.5 h-3.5 mr-1 text-gold" /> {post.date}
                   </span>
-                  <span className="text-[11px] text-foreground/60 font-light flex items-center">
+                  <span className="text-xs text-foreground/60 font-light flex items-center">
                     <Clock className="w-3.5 h-3.5 mr-1 text-gold" /> {post.readTime}
                   </span>
                 </div>
@@ -154,7 +154,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </div>
                 <div>
                   <h4 className="text-charcoal text-base font-semibold uppercase tracking-wider">Devinder Dhaliwal</h4>
-                  <p className="text-gold text-[10px] font-medium uppercase tracking-widest mt-1">Founder & Lead Builder</p>
+                  <p className="text-gold text-xs font-medium uppercase tracking-widest mt-1">Founder & Lead Builder</p>
                 </div>
                 <p className="text-foreground/70 text-xs font-light leading-relaxed">
                   Devinder handles residential design-and-construct feasibility projects, building regulation checks, and worksite supervision.
@@ -173,13 +173,13 @@ export default async function BlogPostPage({ params }: PageProps) {
                       href={`/blog/${rPost.slug}`}
                       className="block group border-b border-gold/5 pb-3 last:border-b-0 last:pb-0"
                     >
-                      <span className="text-[10px] text-gold uppercase tracking-wider font-semibold block mb-1">
+                      <span className="text-xs text-gold uppercase tracking-wider font-semibold block mb-1">
                         {rPost.category}
                       </span>
                       <h5 className="text-charcoal text-sm font-serif group-hover:text-gold transition-colors duration-200 leading-snug">
                         {rPost.title}
                       </h5>
-                      <span className="text-[10px] text-foreground/50 font-light block mt-1">
+                      <span className="text-xs text-foreground/50 font-light block mt-1">
                         {rPost.date}
                       </span>
                     </Link>

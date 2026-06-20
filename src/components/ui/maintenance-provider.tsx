@@ -30,7 +30,7 @@ export function MaintenanceProvider({
               Dhaliwal <span className="text-[#c49a3c]">Homes</span>
             </span>
           </div>
-          <span className="text-[10px] text-[#c49a3c] tracking-[0.3em] font-bold uppercase border border-[#c49a3c]/35 px-3 py-1 rounded-sm bg-[#c49a3c]/5">
+          <span className="text-xs text-[#c49a3c] tracking-[0.3em] font-bold uppercase border border-[#c49a3c]/35 px-3 py-1 rounded-sm bg-[#c49a3c]/5">
             EST. 2026
           </span>
         </header>
@@ -69,11 +69,11 @@ export function MaintenanceProvider({
                 <span>+61 433 704 645</span>
               </a>
               <a
-                href="mailto:devinder@hotmail.com.au"
+                href="mailto:admin@dhaliwalhomes.com.au"
                 className="flex items-center text-sm text-white/80 hover:text-[#c49a3c] transition-colors"
               >
                 <Mail className="w-4.5 h-4.5 text-[#c49a3c] mr-3" />
-                <span>devinder@hotmail.com.au</span>
+                <span>admin@dhaliwalhomes.com.au</span>
               </a>
             </div>
           </div>
@@ -81,7 +81,7 @@ export function MaintenanceProvider({
 
         {/* Footer */}
         <footer className="relative z-10 max-w-[94%] mx-auto w-full px-4 py-8 border-t border-white/5 text-center">
-          <p className="text-[11px] text-white/40 tracking-wider">
+          <p className="text-xs text-white/40 tracking-wider">
             &copy; {new Date().getFullYear()} Dhaliwal Homes. All Rights Reserved. T/A DSD Holdings Pty Ltd.
           </p>
         </footer>

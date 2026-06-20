@@ -82,7 +82,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         className="object-cover pointer-events-none"
         priority
       />
-      <div className="absolute right-4 bottom-4 z-10 bg-gold/90 text-charcoal text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm">
+      <div className="absolute right-4 bottom-4 z-10 bg-gold/90 text-charcoal text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm">
         {afterLabel}
       </div>
 
@@ -103,7 +103,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
           </div>
         </div>
       </div>
-      <div className="absolute left-4 bottom-4 z-10 bg-charcoal/95 text-beige text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 border border-gold/10 rounded-sm">
+      <div className="absolute left-4 bottom-4 z-10 bg-charcoal/95 text-beige text-xs font-bold uppercase tracking-widest px-3 py-1.5 border border-gold/10 rounded-sm">
         {beforeLabel}
       </div>
 

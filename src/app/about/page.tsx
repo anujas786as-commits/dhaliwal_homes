@@ -76,7 +76,7 @@ export default function About() {
                   At <strong>Dhaliwal Homes</strong>, we believe that building a home is a deeply personal and significant investment. Founded on the values of absolute transparency, structural integrity, and architectural precision, our focus has always been to provide Melbourne homeowners with an alternative to standard volume builders.
                 </p>
                 <p>
-                  Based in Pakenham, we specialize in high-quality custom residential homes, second-storey extensions, and full-scale structural renovations across Melbourne's South-East and broader metropolitan area. We deliberately limit our active construction pipeline, allowing us to focus our full resources on ensuring every layout and finish is executed perfectly.
+                  Based in Melbourne, we specialize in high-quality custom residential homes, second-storey extensions, and full-scale structural renovations across Melbourne's South-East and broader metropolitan area. We deliberately limit our active construction pipeline, allowing us to focus our full resources on ensuring every layout and finish is executed perfectly.
                 </p>
                 <p>
                   We partner with top-tier local trades, designers, and structural engineers to deliver properties that are as durable as they are beautiful. By prioritizing quality structural specifications—including reinforced timber framing and certified concrete pours—we build homes that stand the test of time.
@@ -107,7 +107,7 @@ export default function About() {
               </div>
               <div className="text-center bg-gradient-to-br from-beige to-white border border-orange/10 p-4 rounded-2xl">
                 <p className="text-gold text-xs font-bold uppercase tracking-widest">Designed for Living</p>
-                <p className="text-foreground/70 text-[11px] font-light">Custom residential construction with structural specifications.</p>
+                <p className="text-foreground/70 text-xs font-light">Custom residential construction with structural specifications.</p>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function About() {
               </div>
               <div className="text-center bg-white border border-orange/10 p-4 rounded-2xl mt-4 shadow-sm">
                 <p className="text-gold text-xs font-bold uppercase tracking-widest">Devinder Dhaliwal</p>
-                <p className="text-foreground/70 text-[11px] font-light">Managing Director & Registered Builder (DB-U)</p>
+                <p className="text-foreground/70 text-xs font-light">Managing Director & Registered Builder (DB-U)</p>
               </div>
             </div>
 
@@ -300,7 +300,7 @@ export default function About() {
         <div className="max-w-[94%] mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <h2 className="text-3xl sm:text-5xl font-serif text-charcoal">Ready to Discuss Your Project?</h2>
           <p className="text-foreground/75 font-light max-w-lg mx-auto text-sm sm:text-base">
-            Book a consultation with our builder Devinder Dhaliwal to explore design options, site constraints, and get an initial feasibility assessment.
+            Book a consultation with a Dhaliwal Homes expert to explore design options, site constraints, and get an initial feasibility assessment.
           </p>
           <div className="pt-4">
             <Link

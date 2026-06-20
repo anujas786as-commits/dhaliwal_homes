@@ -9,6 +9,38 @@
   --color-white: #FFFFFF;
   --color-gold: #E55A16; /* Construction Orange */
   --color-orange: #E55A16;
+
+  /* Responsive Font Sizes System (Mobile first) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    /* Scale up the core typography levels on desktop for enhanced readability and premium feel */
+    --text-xs: 0.9rem;      /* ~14.4px on desktop instead of 13.5px */
+    --text-sm: 1.0rem;      /* ~16px on desktop instead of 15px */
+    --text-base: 1.125rem;  /* ~18px on desktop instead of 16.8px */
+    --text-lg: 1.25rem;     /* ~20px on desktop instead of 19px */
+    --text-xl: 1.45rem;     /* ~23.2px on desktop instead of 21.6px */
+    --text-2xl: 1.75rem;    /* ~28px on desktop instead of 25.6px */
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    /* Further scale up for large/wide high-resolution monitors */
+    --text-xs: 0.95rem;     /* ~15.2px */
+    --text-sm: 1.05rem;     /* ~16.8px */
+    --text-base: 1.15rem;   /* ~18.4px */
+    --text-lg: 1.3rem;      /* ~20.8px */
+    --text-xl: 1.5rem;      /* ~24px */
+    --text-2xl: 1.85rem;    /* ~29.6px */
+  }
 }
 
 @theme inline {
@@ -23,6 +55,13 @@
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
   --font-outfit: var(--font-outfit);
+
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
   
   /* Soften all border radiuses globally to remove sharp edges */
   --radius-sm: 0.5rem;         /* 8px instead of 2px - softens badges/tags/small buttons */
