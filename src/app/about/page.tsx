@@ -130,7 +130,7 @@ export default function About() {
               </div>
               <div className="text-center bg-white border border-orange/10 p-4 rounded-2xl mt-4 shadow-sm">
                 <p className="text-gold text-xs font-bold uppercase tracking-widest">Devinder Dhaliwal</p>
-                <p className="text-foreground/70 text-xs font-light">Managing Director & Registered Builder (DB-U)</p>
+                <p className="text-foreground/70 text-xs font-light">Managing Director & Registered Builder (DB-U 70464)</p>
               </div>
             </div>
 

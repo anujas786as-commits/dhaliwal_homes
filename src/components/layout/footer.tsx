@@ -118,9 +118,7 @@ export const Footer: React.FC = () => {
             <p>
               &copy; {currentYear} Dhaliwal Homes. All rights reserved.
             </p>
-            <p>
-              DSD Holdings Pty Ltd T/A Dhaliwal Homes | ACN: 676 000 000
-            </p>
+
             <p>
               Built for Luxury, Craftsmanship & Precision
             </p>
