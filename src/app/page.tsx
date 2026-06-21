@@ -33,7 +33,7 @@ export default function Home() {
     },
     {
       icon: MapPin,
-      title: "Melbourne Southeast Specialist",
+      title: "Melbourne Specialist",
       desc: "In-depth knowledge of local soil classes, council overlays, and planning schemes.",
     },
     {
