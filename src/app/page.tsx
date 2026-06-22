@@ -583,7 +583,7 @@ export default function Home() {
                   </div>
                   <h4 className="text-charcoal text-lg font-serif">Melbourne Office & Site Core</h4>
                   <p className="text-foreground/70 text-xs font-light max-w-sm mx-auto">
-                    Headquartered at 1424, 1 Queens Road, Melbourne VIC 3004. Custom builder consultations available by booking.
+                    Head Office at 1424, 1 Queens Road, Melbourne VIC 3004. Custom builder consultations available by booking.
                   </p>
                   <a
                     href="https://maps.google.com/?q=1424,+1+Queens+Road,+Melbourne+VIC+3004"

@@ -341,7 +341,7 @@ export default function Contact() {
                 </div>
                 <div className="h-[1px] w-full bg-gold/10" />
                 <p className="text-foreground/70 text-xs font-light leading-relaxed">
-                  Headquartered in Melbourne VIC. Licensed residential builder managing sites throughout Melbourne corridors.
+                  Head Office in Melbourne VIC. Licensed residential builder managing sites throughout Melbourne corridors.
                 </p>
                 <div className="relative aspect-[16/9] w-full bg-beige border border-orange/10 rounded-2xl overflow-hidden flex flex-col items-center justify-center text-center p-4">
                   <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000002_1px,transparent_1px),linear-gradient(to_bottom,#00000002_1px,transparent_1px)] bg-[size:16px_16px] pointer-events-none" />
